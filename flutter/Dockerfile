@@ -7,7 +7,7 @@
 # To build iOS applications, a Mac development environment is necessary.
 #
 
-FROM debian:bookworm
+FROM debian:stable
 MAINTAINER Chinmay Garde <chinmaygarde@google.com>
 
 # Install Dependencies.
