@@ -5,22 +5,22 @@ steps:
 - name: 'docker:stable'
   args: [
     'build', '.',
-    '-t', 'gcr.io/$PROJECT_ID/flutter:master',
+    '-t', 'eu.gcr.io/$PROJECT_ID/flutter:master',
     '--build-arg', 'channel=master',
   ]
 
 - name: 'docker:stable'
   args: [
     'build', '.',
-    '-t', 'gcr.io/$PROJECT_ID/flutter:beta',
+    '-t', 'eu.gcr.io/$PROJECT_ID/flutter:beta',
     '--build-arg', 'channel=beta',
   ]
 
 - name: 'docker:stable'
   args: [
     'build', '.',
-    '-t', 'gcr.io/$PROJECT_ID/flutter:stable',
-    '-t', 'gcr.io/$PROJECT_ID/flutter',
+    '-t', 'eu.gcr.io/$PROJECT_ID/flutter:stable',
+    '-t', 'eu.gcr.io/$PROJECT_ID/flutter',
     '--build-arg', 'channel=stable',
   ]
 
